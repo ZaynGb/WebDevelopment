@@ -1,0 +1,213 @@
+/* russo-one-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/russo-one-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/russo-one-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* ruslan-display-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ruslan Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+    box-sizing: border-box;
+  }
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal; 
+    color: white;
+}
+
+.wrapper{
+    max-width: 2900px;
+    margin: 0 auto;
+}
+
+/*Header style start */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-right: 60px;
+    
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 82px;
+}
+
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    font-size: 20px;
+    line-height: 70px;
+    color: white;
+    text-decoration: none;
+}
+
+.header__link:hover,.header__link:focus,.header__link:active{
+    opacity: .80;
+}
+
+/*Header style end */
+
+
+/*intro style start */
+
+
+
+.intro{
+    min-height: 100vh;
+    background: url(../img/feedback.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 180px;
+    padding-left: 4%;
+}
+
+
+
+
+/*intro style end */
+
+
+.search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.search-form__field{
+    width: 250px;
+    background-color: transparent;
+    background: url(../img/svg/ellipse.svg)no-repeat left top;
+    background-size: 30px;
+    border: 0;
+    border-bottom: 4px solid #FFFFFF;
+    margin-right: 200px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.search-form__field::placeholder{
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Russo One';
+}
+
+.search-form__submit{
+    padding: 0% 3%;
+    font-family: 'Russo One';
+    background-color: white;
+}
+
+.search-form__submit:hover,.search-form__submit:focus,.search-form__submit:active{
+    background: rgb(242, 242, 242);
+}
+
+/*footer_stile start*/
+
+.footer{
+    background:rgba(7, 15, 13, 1);
+    padding: 50px 0;
+}
+
+.footer__logo{
+    padding-left: 4%;
+    padding-bottom: 0%;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo{
+    width: 50%;
+}
+
+.footer__nav{
+    width: 50%;
+}
+
+.footer__menu-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50 px;
+}
+
+.footer__menu-link{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.footer__menu-link:hover,.footer__menu-link:focus,.footer__menu-link:active{
+    opacity: .80;
+}
+
+/*footer_stile end*/
+
+.title{
+    font-weight: 500;
+    font-size:large;
+    
+}
+
+.sign__back{
+    background-color: rgb(179, 156, 28);
+    font-family: 'Russo One';
+    color: azure;
+    size: 200px;
+    margin-top: 6%;
+    padding: 10%;
+    border:  none;
+    display: inline-block; /* Строчно-блочный элемент */
+    
+    color: #fff; /* Белый цвет текста */
+    padding: 0.5rem 2rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+}
+
+.sign__back:hover,.sign__back:focus,.sign__back:active{
+    background: rgb(195, 170, 30);
+}
